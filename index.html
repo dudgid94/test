@@ -6,30 +6,18 @@
   <title>Book a demo</title>
 </head>
 <body>
-  <!-- button -->
-  <a href="#" role="button" aria-label="Book a demo">Book a demo</a>
+  <!-- HubSpot CTAトリガー用ボタン -->
+  <a role="button" 
+     aria-label="Book a demo"
+     class="hs-cta-trigger-button hs-cta-trigger-button-197364033874">
+    Book a demo
+  </a>
 
-  <!-- Start of HubSpot Embed Code -->
+    <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19512115.js"></script>
   <!-- End of HubSpot Embed Code -->
+</body>
+</html>
 
-    <script>
-    // ページ読み込み後に実行
-    document.addEventListener('DOMContentLoaded', function() {
-      var demoButton = document.getElementById('book-demo');
-      demoButton.addEventListener('click', function(e) {
-        e.preventDefault(); // aタグのデフォルト動作を止める
-
-        // HubSpot CTAボタンを探す
-        var hsButton = document.querySelector('.hs-cta-trigger-button.hs-cta-trigger-button-197364033874');
-        if (hsButton) {
-          // HubSpot CTAボタンのクリックイベントを発火
-          hsButton.click();
-        } else {
-          console.warn('HubSpot CTA button not found');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
